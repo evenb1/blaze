@@ -1,4 +1,5 @@
 import { Flame, MessageCircle, Camera, Share2 } from "lucide-react";
+import Image from "next/image";
 
 const WA_NUMBER = "254700000000"; // 🔁 Replace with real number
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order a Blaze Box 🔥")}`;
@@ -19,12 +20,18 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="bg-[#BA1B21] w-9 h-9 rounded-lg flex items-center justify-center shrink-0">
-                <Flame size={18} color="#FCDB4E" strokeWidth={2.5} />
-              </div>
-              <span className="font-display text-white text-2xl tracking-[0.2em] leading-none">
-                BLAZE
-              </span>
+                    {/* Logo */}
+                      <a href="/" className="shrink-0">
+                        <Image
+                          src="/blaze.png"
+                          alt="Blaze"
+                          width={110}
+                          height={40}
+                          className="object-contain"
+                          priority
+                        />
+                      </a>
+            
             </div>
             <p className="font-body text-white/30 text-[14px] leading-relaxed mb-6">
               One Flame. Fast. Fresh. Yours. Hurlingham&apos;s fastest, loudest, most shareable dining destination.
