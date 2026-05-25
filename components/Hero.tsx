@@ -17,31 +17,59 @@ export default function Hero() {
   useEffect(() => { setMounted(true); }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col lg:flex-row bg-[#F5F0EB]">
+    <section className="relative min-h-screen flex flex-col lg:flex-row bg-[#F5F0EB] overflow-hidden">
+
+      {/* ── BACKGROUND WATERMARKS ─────────────────────────────────────── */}
+      <div className="absolute inset-0 pointer-events-none select-none" aria-hidden>
+
+        {/* Large diagonal BLAZE repeats — red outline */}
+        {["BLAZE", "BLAZE", "BLAZE", "BLAZE"].map((word, i) => (
+          <div
+            key={`wm-${i}`}
+            className="absolute font-display leading-none tracking-[0.15em] whitespace-nowrap"
+            style={{
+              fontSize: "clamp(100px, 20vw, 240px)",
+              WebkitTextStroke: "1.5px rgba(186,27,33,0.08)",
+              color: "transparent",
+              top: `${i * 26 - 5}%`,
+              left: i % 2 === 0 ? "-3%" : "15%",
+              transform: "rotate(-8deg)",
+            }}
+          >
+            {word}
+          </div>
+        ))}
+
+        {/* Secondary smaller words — gold outline, opposite diagonal */}
+        {["FAST", "FRESH", "YOURS", "FLAME"].map((word, i) => (
+          <div
+            key={`wm2-${i}`}
+            className="absolute font-display leading-none tracking-[0.2em] whitespace-nowrap"
+            style={{
+              fontSize: "clamp(40px, 7vw, 96px)",
+              WebkitTextStroke: "1px rgba(252,219,78,0.18)",
+              color: "transparent",
+              top: `${10 + i * 22}%`,
+              right: `${-2 + (i % 2) * 8}%`,
+              transform: "rotate(6deg)",
+            }}
+          >
+            {word}
+          </div>
+        ))}
+
+        {/* Dot grid texture */}
+        <div
+          className="absolute inset-0 opacity-[0.4]"
+          style={{
+            backgroundImage: "radial-gradient(circle, rgba(186,27,33,0.12) 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+          }}
+        />
+      </div>
 
       {/* ── LEFT PANEL ─────────────────────────────────────────────────── */}
       <div className="relative flex flex-col justify-center w-full lg:w-[45%] px-12 md:px-16 pt-32 pb-16 lg:pt-0 lg:pb-0 min-h-[60vh] lg:min-h-screen">
-
-        {/* Watermark — dark strokes on light bg */}
-        <div
-          className="absolute inset-0 flex flex-col justify-center pointer-events-none select-none overflow-hidden"
-          aria-hidden
-        >
-          {["BLAZE", "BLAZE", "BLAZE"].map((word, i) => (
-            <div
-              key={i}
-              className="font-display leading-none tracking-widest whitespace-nowrap"
-              style={{
-                fontSize: "clamp(90px, 18vw, 220px)",
-                WebkitTextStroke: "1.5px rgba(23,23,23,0.05)",
-                color: "transparent",
-                marginLeft: i % 2 === 0 ? "-2%" : "8%",
-              }}
-            >
-              {word}
-            </div>
-          ))}
-        </div>
 
         {/* Red left accent bar */}
         <div className="absolute left-0 top-[20%] bottom-[20%] w-[3px] bg-[#BA1B21]" />
@@ -125,40 +153,16 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── RIGHT PANEL — chicken cutout, natural size ───────────────── */}
-      <div className="relative flex-1 flex items-center justify-center">
+      {/* ── RIGHT PANEL ──────────────────────────────────────────────── */}
+      <div className="relative flex-1 flex items-center justify-start">
 
-        {/* Spinning badge — top right */}
-        <div className="absolute top-[8%] right-[6%] z-20">
-          <div className="relative w-[120px] h-[120px] lg:w-[140px] lg:h-[140px]">
-            <svg
-              viewBox="0 0 140 140"
-              className="absolute inset-0 w-full h-full animate-spin-slow"
-              aria-hidden
-            >
-              <defs>
-                <path id="badge-path" d="M70,70 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0" />
-              </defs>
-              <text style={{ fontSize: 11, letterSpacing: 5, fontFamily: "var(--font-display)" }}>
-                <textPath href="#badge-path" fill="#BA1B21">
-                  BLAZE • HURLINGHAM • ORDER NOW •
-                </textPath>
-              </text>
-            </svg>
-            <div className="absolute inset-[18px] bg-[#BA1B21] rounded-full flex items-center justify-center shadow-[0_4px_28px_rgba(186,27,33,0.35)]">
-              <div className="text-center leading-none">
-                <div className="font-display text-[#FCDB4E] text-[18px]">ORDER</div>
-                <div className="font-display text-white/70 text-[8px] tracking-[0.2em] mt-0.5">NOW</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Chicken cutout — full natural width, no cropping */}
+
+        {/* Chicken cutout — shifted left via negative margin */}
         <img
           src="/hero.png"
           alt="Blaze signature chicken"
-          className="w-full h-auto block -translate-y-2"
+          className="w-full h-auto block -translate-y-2 -ml-10"
         />
 
         {/* Red corner accents */}
