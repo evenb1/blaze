@@ -1,7 +1,9 @@
+"use client";
+
 import { MessageCircle, Timer, MapPin, PackageCheck } from "lucide-react";
 
-const WA_NUMBER = "254700000000"; // 🔁 Replace with real number
-const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order a Blaze Box 🔥")}`;
+const WA_NUMBER = "254140687777"; // 🔁 Replace with real number
+const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order 🔥")}`;
 
 const FEATURES = [
   {
@@ -42,7 +44,7 @@ export default function DeliverySection() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=500&auto=format&fit=crop"
+                src="/culture/IMG_8954.jpg"
                 alt="Fast delivery"
                 className="w-full h-[420px] object-cover object-center opacity-80"
               />
@@ -62,7 +64,7 @@ export default function DeliverySection() {
               HOW IT WORKS
             </span>
             <h2 className="font-display text-[clamp(42px,5vw,68px)] leading-[0.92] tracking-wide text-white mb-6">
-              YOUR BLAZE BOX,
+              YOUR ORDER,
               <br />
               <span className="text-[#FCDB4E]">ON THE WAY.</span>
             </h2>
@@ -101,21 +103,7 @@ export default function DeliverySection() {
                 <MessageCircle size={16} />
                 ORDER ON WHATSAPP
               </a>
-              <div className="flex flex-col">
-                <span className="font-body text-white/30 text-[11px] uppercase tracking-widest mb-1">
-                  Also on
-                </span>
-                <div className="flex gap-2 flex-wrap">
-                  {DELIVERY_APPS.map((app) => (
-                    <span
-                      key={app}
-                      className="font-body text-white/50 text-[12px] border border-white/15 rounded px-2.5 py-1"
-                    >
-                      {app}
-                    </span>
-                  ))}
-                </div>
-              </div>
+      
             </div>
           </div>
         </div>

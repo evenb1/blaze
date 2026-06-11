@@ -9,6 +9,7 @@ import TestimonialsSection from "../../components/TestimonialsSection";
 import Footer from "../../components/Footer";
 
 import FindUs from "../../components/Findus";
+import CultureTeaser from "../../components/CultureTeaser";
 
 export default function Home() {
   return (
@@ -34,8 +35,7 @@ export default function Home() {
       <OrderCTA />
  
       {/* Social proof */}
-      <TestimonialsSection />
- 
+<CultureTeaser/> 
       {/* Map + hours */}
       <FindUs />
  

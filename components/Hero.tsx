@@ -3,7 +3,7 @@
 import { MessageCircle, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const WA_NUMBER = "254700000000"; // 🔁 Replace with real number
+const WA_NUMBER = "254140687777"; // 🔁 Replace with real number
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order 🔥")}`;
 
 const STATS = [
@@ -125,7 +125,7 @@ export default function Hero() {
               ORDER ON WHATSAPP
             </a>
             <a
-              href="/blazemenu.pdf"
+              href="/Blaze Menu_New_IV.pdf"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 border border-[#171717]/20 hover:border-[#BA1B21] text-[#171717]/55 hover:text-[#BA1B21] font-display text-[13px] tracking-[0.2em] px-8 py-4 rounded-xl transition-all duration-200"

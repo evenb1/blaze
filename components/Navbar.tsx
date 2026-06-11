@@ -10,6 +10,8 @@ const NAV_LINKS = [
   { label: "Menu", href: "#menu" },
   { label: "About", href: "#about" },
   { label: "Find Us", href: "#find-us" },
+    { label: "Culture", href: "/culture" },
+
 ];
 
 export default function Navbar() {

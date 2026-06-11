@@ -1,3 +1,5 @@
+"use client";
+
 import { Zap, Flame, Clock } from "lucide-react";
 
 const FEATURES = [
@@ -22,21 +24,19 @@ export default function About() {
   return (
     <section id="about" className="bg-white py-24 md:py-32 px-6 md:px-12 overflow-hidden">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
         {/* Image collage */}
         <div className="relative h-[480px] lg:h-[560px]">
-          {/* Main image */}
           <img
-            src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop"
-            alt="Blaze food close-up"
+            src="/product/fullfamilyserving.jpg"
+            alt="Blaze full family serving"
             className="absolute top-0 left-0 w-[72%] h-[74%] object-cover rounded-2xl"
           />
-          {/* Secondary image */}
           <img
-            src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=600&auto=format&fit=crop"
+            src="/product/3piecer-culture.jpg"
             alt="Blaze chicken"
             className="absolute bottom-0 right-0 w-[58%] h-[52%] object-cover rounded-2xl border-4 border-white"
           />
-          {/* Red stat badge */}
           <div className="absolute bottom-[22%] left-[4%] z-10 bg-[#BA1B21] rounded-xl px-5 py-4 shadow-[0_8px_32px_rgba(186,27,33,0.35)]">
             <div className="font-display text-[#FCDB4E] text-[30px] leading-none">3 MIN</div>
             <div className="font-body text-white/75 text-[11px] tracking-widest uppercase mt-1.5">
@@ -56,9 +56,8 @@ export default function About() {
             <span className="text-[#BA1B21]">YOURS.</span>
           </h2>
           <p className="font-body text-[#555] text-[16px] leading-[1.8] mb-10">
-            Blaze was built for Nairobi&apos;s fast-paced urban lifestyle. No 40-item menus.
-            No waiting forever. We chose one hero product and perfected it — so every
-            single Blaze Box you get is exactly as good as the last one.
+            Blaze is Hurlingham's home for flame-grilled chicken, loaded burgers and wood-fired pizza.
+            Fast enough for a lunch break. Good enough to come back for.
           </p>
 
           <div className="flex flex-col gap-8">
