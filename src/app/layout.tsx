@@ -15,7 +15,7 @@ const body = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Blaze — Fast Food",
+  title: "Blaze - Fast Food",
   description: "Burgers, fried chicken and pizza.",
 };
 
