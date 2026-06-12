@@ -3,7 +3,7 @@
 import { MessageCircle, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const WA_NUMBER = "254140687777"; // 🔁 Replace with real number
+const WA_NUMBER = "254140687777"; 
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order 🔥")}`;
 
 const STATS = [
@@ -154,15 +154,15 @@ export default function Hero() {
       </div>
 
       {/* ── RIGHT PANEL ──────────────────────────────────────────────── */}
-      <div className="relative flex-1 flex items-center justify-start">
+      <div className="relative flex-1 flex items-center justify-stretch">
 
 
 
-        {/* Chicken cutout — shifted left via negative margin */}
+        {/* Chicken cutout — full width, no left margin */}
         <img
-          src="/hero.png"
+          src="/heroimage.png"
           alt="Blaze signature chicken"
-          className="w-full h-auto block -translate-y-2 -ml-10"
+          className="w-full border-l-2 border-[#BA1B21] h-auto block -translate-y-2"
         />
 
         {/* Red corner accents */}

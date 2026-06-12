@@ -2,7 +2,7 @@
 
 import { MapPin, Clock, MessageCircle, Navigation } from "lucide-react";
 
-const WA_NUMBER = "254700000000"; // 🔁 Replace with real number
+const WA_NUMBER = "254140687777"; // 🔁 Replace with real number
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order 🔥")}`;
 
 const HOURS = [
@@ -38,7 +38,7 @@ export default function FindUs() {
           {/* Map embed */}
           <div className="rounded-2xl overflow-hidden border border-white/8 shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.30013692249946!2d36.79908156272749!3d-1.2931378852588433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1100657f5339%3A0x37e936169803f20a!2sBy%20The%20Garden!5e0!3m2!1sen!2ske!4v1779138353409!5m2!1sen!2ske"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1385.400176708374!2d36.79792306448197!3d-1.2926509721143928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117e38f6a0d5%3A0xc233deed158f4dfe!2sBlaze%20Foods%20Kenya!5e0!3m2!1sen!2ske!4v1781250909911!5m2!1sen!2ske"
               width="100%"
               height="420"
               style={{ border: 0, display: "block" }}
@@ -63,12 +63,12 @@ export default function FindUs() {
                     ADDRESS
                   </div>
                   <div className="font-body text-white text-[17px] leading-relaxed">
-                    By The Garden, Hurlingham
+                    Maa Hotel & Suites, Hurlingham
                     <br />
                     <span className="text-white/45 text-[15px]">Nairobi, Kenya</span>
                   </div>
                   <a
-                    href="https://maps.app.goo.gl/yourlink"
+                    href="https://maps.app.goo.gl/ssHj8gp4VoW5HCnP8"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1.5 mt-4 text-[#BA1B21] hover:text-[#FCDB4E] font-display text-[11px] tracking-[0.2em] transition-colors"

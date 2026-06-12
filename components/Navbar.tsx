@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { MessageCircle, Menu, X } from "lucide-react";
 
-const WA_NUMBER = "254700000000"; // 🔁 Replace with real number
+const WA_NUMBER = "254140687777"; // 🔁 Replace with real number
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order 🔥")}`;
 const NAV_LINKS = [
   { label: "Menu", href: "#menu" },
