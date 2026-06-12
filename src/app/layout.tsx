@@ -15,8 +15,8 @@ const body = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Blaze — Flame Grilled",
-  description: "Burgers, fried chicken and pizza. Flame-grilled to order.",
+  title: "Blaze — Fast Food",
+  description: "Burgers, fried chicken and pizza.",
 };
 
 export default function RootLayout({
