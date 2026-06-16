@@ -180,21 +180,21 @@ const CulturePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="aspect-[3/4] overflow-hidden  contrast-125 hover:grayscale-0 transition-all duration-500 border border-white/10 bg-zinc-950">
+              <div className="aspect-[3/4] overflow-hidden  ">
                 <img src="/culture/IMG_9063.jpg" alt="Food close up" className="w-full h-full object-cover" />
               </div>
               <p className="text-xs text-gray-400 font-display tracking-wide">// THE ATMOSPHERE</p>
             </div>
 
             <div className="space-y-4 md:mt-12">
-              <div className="aspect-[3/4] overflow-hidden  contrast-125 hover:grayscale-0 transition-all duration-500 border border-white/10 bg-zinc-950">
+              <div className="aspect-[3/4] overflow-hidden  ">
                 <img src="/culture/IMG_9071.jpg" alt="Food close up" className="w-full h-full object-cover" />
               </div>
               <p className="text-xs text-gray-400 font-display tracking-wide">// THE HEAT</p>
             </div>
 
             <div className="space-y-4 md:mt-24">
-              <div className="aspect-[3/4] overflow-hidden  contrast-125 hover:grayscale-0 transition-all duration-500 border border-white/10 bg-zinc-950">
+              <div className="aspect-[3/4] overflow-hidden  ">
                 <img src="/culture/IMG_9088.jpg" alt="Atmosphere" className="w-full h-full object-cover" />
               </div>
               <p className="text-xs text-gray-400 font-display tracking-wide">// THE CRUNCH</p>
