@@ -24,8 +24,8 @@ export default function Home() {
 
  
       {/* About / brand story */}
-      <About />
- 
+      {/* <About />
+  */}
 
  
       {/* How ordering works */}
