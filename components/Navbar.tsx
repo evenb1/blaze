@@ -38,7 +38,7 @@ export default function Navbar() {
           <Image
             src="/blaze.png"
             alt="Blaze"
-            width={110}
+            width={90}
             height={40}
             className="object-contain"
             priority

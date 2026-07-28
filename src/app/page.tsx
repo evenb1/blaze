@@ -10,6 +10,7 @@ import Footer from "../../components/Footer";
 
 import FindUs from "../../components/Findus";
 import CultureTeaser from "../../components/CultureTeaser";
+import DeliveryApps from "../../components/DeliveryApps";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
  
       {/* How ordering works */}
       <DeliverySection />
- 
+ <DeliveryApps/>
       {/* Big WhatsApp CTA */}
       <OrderCTA />
  
