@@ -1,7 +1,7 @@
 import { Flame, MessageCircle, Camera, Share2 } from "lucide-react";
 import Image from "next/image";
 
-const WA_NUMBER = "254700000000"; // 🔁 Replace with real number
+const WA_NUMBER = "254140687777"; // 🔁 Replace with real number
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hey Blaze! I'd like to order a Blaze Box 🔥")}`;
 
 const HOURS = [
